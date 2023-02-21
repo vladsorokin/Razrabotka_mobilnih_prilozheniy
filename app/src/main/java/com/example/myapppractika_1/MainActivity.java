@@ -19,6 +19,17 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(MainActivity.this, "App Created", Toast.LENGTH_SHORT).show();
         Log.v(TAG, "This app is created");
+
+        Button btn = (Button)findViewById(R.id.btn);
+        View.OnClickListener onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Activity_2.class);
+                startActivity(intent);
+
+            }
+        };
+        btn.setOnClickListener(onClickListener);
     }
 
     @Override
