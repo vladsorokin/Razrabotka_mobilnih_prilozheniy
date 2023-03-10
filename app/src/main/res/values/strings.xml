@@ -3,4 +3,5 @@
     <string name="emailText">Email</string>
     <string name="passwordText">Password</string>
     <string name="buttonText">Registrate</string>
+    <string name="headertext">You are welcome!</string>
 </resources>
